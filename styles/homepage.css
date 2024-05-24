@@ -1,0 +1,133 @@
+body{
+    transform: translate(0, -16px);
+    font-family: 'arimo', Verdana, Geneva, Tahoma, sans-serif;   
+}
+.homepage-header .ul-header{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: rgb(6, 0, 59);
+    color: #fff;
+}
+.ul-header a{
+    color: #fff;
+    text-decoration: none;
+}
+.ul-header input{
+    width: 20rem;
+    height: 2rem;
+    background-color: #eee9;
+    border-radius: .5rem;
+}
+.ul-header button{
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    background: linear-gradient(to bottom, #ffdc14, #ff3c00);
+    background-clip: text;
+    color: transparent;
+    
+}
+.intr-p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.left-tittle{
+    font-weight: bold;
+    margin: 1rem 0 1rem 12rem;
+}
+.left-tittle::before{
+    content: '-> ';
+}
+.board {
+    display: flex;
+    height: 25rem;
+    width: 80%;
+    justify-content: space-around;
+    border: solid 2px #000;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.service {
+    width: 20rem;
+    height: 23rem;
+    border: solid 1px #222;
+    border-radius: 1rem;
+    align-self: center;
+    overflow: hidden;
+    box-shadow: -5px 3px 10px #444;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items: center;
+    background: linear-gradient(to bottom, #1119, #3e3e3e60);
+}
+.product {
+    width: 20rem;
+    height: 23rem;
+    border: solid 1px #222;
+    border-radius: 1rem;
+    align-self: center;
+    overflow: hidden;
+    box-shadow: -5px 3px 10px #444;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items: center;
+    background: linear-gradient(to bottom, #1119, #3e3e3e60);
+}
+.img-ex {
+    max-width: 19rem;
+    max-height: 16rem;
+    border-radius: 1rem;
+}
+.name {
+    margin: 0;
+    text-align: center;
+}
+.small-p{
+    margin: 0 .5rem;
+}
+
+.main-footer {
+    transform: translate(0, 1rem);
+    box-sizing: border-box;
+    background-color: #030a33;
+    color: #fff;
+    padding: 1rem 0 0 0;
+    height: 12rem;
+    overflow: hidden;
+}
+.main-footer section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+.small-icon {
+    background-image: url('../img/logo_accegas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7rem;
+    height: 6rem;
+    text-align: center;
+    padding: 4rem 0 0 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.foot-ul{
+    list-style: none;
+}
+
+.foot-a{
+    color: #fff;
+    text-decoration: none;
+}
