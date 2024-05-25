@@ -8,6 +8,9 @@ searchBar.addEventListener('keyup', (e)=> {
     
 })
 
+boards[0].appendChild(services[0]);
+boards[0].appendChild(services[1]);
+boards[0].appendChild(services[2]);
 
 
 
