@@ -57,4 +57,6 @@ const instCal = defservice('Instalacion de calentadores',
 )
 
 let services = [reparCale, instGas, limCub, mantGen, rev5anos, instCal];
-
+services.forEach(service => {
+    servicescatalogue.appendChild(service)
+});
