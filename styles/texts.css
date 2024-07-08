@@ -1,0 +1,39 @@
+/* Tag <a> */
+.fny_a {
+    font-size: 1.2rem;
+    color: #181818;
+    font-weight: bold;
+    text-decoration: none;
+}
+.fny_a:visited{
+    color: #333;
+}
+/* Tag <p>*/
+.big_p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cnt_p{
+    font-size: 1.2rem;
+    margin: auto;
+}
+.prg_p { /* paragraph text */
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* Tag <span> */
+.inf_spn{
+    font-size: .9rem;
+    text-align: center;
+}
+.hltd_inp_span { /* Highlighted inside P Span */
+    font-weight: bold;
+    color: #101010;
+}
+.trs_spn{
+    position: absolute;
+    width: inherit;
+    text-align: center;
+}

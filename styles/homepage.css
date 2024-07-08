@@ -1,82 +1,70 @@
 body{
-    transform: translate(0, -16px);
-    font-family: 'arimo', Verdana, Geneva, Tahoma, sans-serif;   
+    font-family: 'arimo', Verdana, Geneva, Tahoma, sans-serif;  
 }
 /* Header */
-.homepage-header .ul-header{
+.homepage-header {
+    width: 100%;
+    height: 4rem;
+    background-color: #99a0c5;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
+}
+.ul-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     align-items: center;
-    background-color: rgb(6, 0, 59);
-    color: #fff;
+    color: #000;
+    margin: 0;
+    font-size: 1.2rem;
+}
+.main_nav {
+    width: 90%;
+    display: flex;
+    align-content: center;
+
+}
+.log_cont img, .log_cont{
+    width: 5rem;
+    display: inline-block;
 }
 .ul-header a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
-.ul-header input{
-    width: 20rem;
-    height: 2rem;
-    background-color: #eee9;
-    border-radius: .5rem;
-}
-.ul-header button{
-    background: none;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
 
-.icon {
-    background: linear-gradient(to bottom, #ffdc14, #ff3c00);
-    background-clip: text;
-    color: transparent;
+.ul-header li img {
+    width: 5rem;
     
 }
+
 /* Main */
-.intr-p {
-    font-size: 1.2rem;
-    width: 80%;
-    margin: 0 auto;
+.int-img-content{
+    width: 100%;
+    box-sizing: border-box;
+    height: 98vh;
+    background-image: url(../img/homepage/calentador.png);
+    background-repeat: no-repeat;
+    background-size: 25rem;
+    background-position: left;    
 }
-.left-tittle{
-    font-weight: bold;
-    margin: 1rem 0 1rem 12rem;
-}
-.left-tittle::before{
-    content: '-> ';
-}
+
 /* Main - Boards */
-.board-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-.board {
-    justify-self: center;
-    display: flex;
-    height: 25rem;
-    width: 80%;
-    justify-content: space-around;
-    border: solid 2px #000;
-    border-radius: 2rem;
-    overflow: hidden;
-    margin: 0;
-}
+
 .service {
     width: 20rem;
     height: 23rem;
     border: solid 1px #222;
     border-radius: 1rem;
-    align-self: center;
     overflow: hidden;
     box-shadow: -5px 3px 10px #444;
-    display:flex;
+    display:inline-flex;
     justify-content:center;
     flex-wrap:wrap;
     align-items: center;
     background: linear-gradient(to bottom, #1119, #3e3e3e60);
+    margin: 0 2rem;
 }
 /* Main - Boards - Items */
 .product {
@@ -93,20 +81,7 @@ body{
     align-items: center;
     background: linear-gradient(to bottom, #1119, #3e3e3e60);
 }
-.img-ex {
-    min-width: 10rem;
-    max-width: 19rem;
-    max-height: 16rem;
-    border-radius: 1rem;
-    text-align: center;
-}
-.name {
-    margin: 0;
-    text-align: center;
-}
-.small-p{
-    margin: 0 .5rem;
-}
+
 /* Main - Footer */
 .main-footer {
     transform: translate(0, 1rem);
@@ -125,7 +100,7 @@ body{
     height: 100%;
 }
 .small-icon {
-    background-image: url('../img/logo_accegas.png');
+    background-image: url('../img/Logo.png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 7rem;

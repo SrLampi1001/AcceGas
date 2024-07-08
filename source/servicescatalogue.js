@@ -55,8 +55,13 @@ const instCal = defservice('Instalacion de calentadores',
     999999,
     'img/services/example.jpg'
 )
+const plani = defservice('Planimetria',
+    'trazado de redes de gas, isometricos, modelados 3D, levantamiento de planos para redes',
+    'Ofrecemos un servicio de planimetria para redes de gas, con ayuda de nuestros tecnicos y asesoria puedes descubir la mejor distribucion para redes de gas en tu hogar, hacemos uso de la tecnologia de modelado 3D.',
+    909099, 'img/services/#'
+);
 
-let services = [reparCale, instGas, limCub, mantGen, rev5anos, instCal];
+let services = [reparCale, instGas, limCub, mantGen, rev5anos, instCal, plani];
 services.forEach(service => {
     servicescatalogue.appendChild(service)
 });

@@ -1,0 +1,88 @@
+/* Media containers */
+.int_img_cnt { /* Introduction image container */
+    height: 45rem;
+    background: #eee url(../img/homepage/calentador.png) no-repeat left;
+    background-size: 30rem;
+    background-position: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 30rem;
+}
+.map_cnt{ /* Map Containter */
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+/* Special Tags */
+.btn_div{ /* Button div */
+    border: .3rem outset #000;
+    border-radius: .6rem 0;
+    width: max-content;
+    padding: .4rem .6rem;
+    background: linear-gradient(to left, #bbb, #eee);
+    color: #000;
+}
+.btn_div:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, #aaa, #ddd);
+}
+.go_lft{ /* Button to slide to left */
+    font-size: 5rem;
+    top: calc(50% - 5rem);
+    left: 0;
+    cursor: pointer;
+}
+.go_rgt{ /* Button to slide to right */
+    font-size: 5rem;
+    top: calc(50% - 5rem);
+    right: 0;
+    cursor: pointer;
+}
+/* Grids */
+.lmnt_3grid{ /* Grid container for 3 expected Elements */
+    margin: 6rem 0 0 0;
+    width: 100%;
+    justify-content: center;
+    grid-gap: 0 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 35rem);
+    grid-template-rows: repeat(2, auto);
+}
+.lmnt_4grid{ /* Grid containter for 4 expected Elements */
+    display: grid;
+    margin: 6rem 0 0 0;
+    width: 100%;
+    grid-template-columns: repeat(2, 30rem);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+}
+/* Flex */
+.tlt_lmts_flex{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: center;
+}
+.lmt_flex{
+    width: 15rem;
+
+    max-height: 25rem;
+    overflow: hidden;
+    margin: 0 1rem;
+}
+
+/* Sub containers */
+.tlt_prgh_div { /* Title & paragraph simple div */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.tlt_img_prc{
+    text-align: center;
+    border-radius: .6rem;
+    background-color: #bfdcdd;
+}

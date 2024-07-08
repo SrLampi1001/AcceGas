@@ -1,21 +1,16 @@
-.hidden {
-    display: none;
+.rgt_pst {
+    position: relative;
+    left: calc(100% - 20rem);
+    top: 4rem;
 }
-.board-lft, .board-rgt{
-    width: 2rem;
-    height: 2rem;
-    background: #09a6ef;          
-    cursor: pointer;  
+.pst_abs{
+    position: absolute;
 }
-.board-lft {
-    clip-path: polygon(61% 0, 26% 48%, 61% 100%, 35% 100%, 0% 48%, 34% 0);
-}
-.board-rgt {
-    clip-path: polygon(61% 100%, 100% 48%, 61% 0, 35% 0, 70% 48%, 34% 100%);
+.map_ifr{
+    width: 80%;
+    height: 20rem;
+    border: .1rem solid #101010;
+    border-radius: 1rem;
+    
 }
 
-@media (max-width:1200px) {
-    html {
-    font-size: 10px;
-}
-}
