@@ -5,8 +5,40 @@
     font-weight: bold;
     text-decoration: none;
 }
+.a-bold-white{
+    color: #fff;
+    font-weight: 500;
+    font-size:1.2rem;
+    text-decoration: none;
+    transition: .2s;
+    z-index: 600;
+}
+.a-bold-white:hover{
+    color: var(--orange-accent);
+}
+.a-small-gray{
+    color: var(--gray-dark);
+    text-decoration: none;
+    transition: .1s;
+}
+.a-small-gray:hover{
+    color: var(--gray-light);
+}
 .fny_a:visited{
     color: #333;
+}
+.a_symbol{
+    background-color: var(--gray-light-tras);
+    border-radius: .5rem;
+    width: 1rem;
+    height: 1rem;
+    padding: .2rem;
+    display: inline-block;
+    transform: translate(13px);
+    transition: .2s;
+}
+.a_symbol:hover{
+    background-color: #fff;
 }
 /* Tag <p>*/
 .big_p {
@@ -36,4 +68,13 @@
     position: absolute;
     width: inherit;
     text-align: center;
+}
+/* Special Tags */
+.aftr-down-txt::after{
+    content: 'Accegas';
+    color: var(--gray-light);
+    position: relative;
+    bottom: 35%;
+    left: 4%;
+    font-weight: 900;
 }

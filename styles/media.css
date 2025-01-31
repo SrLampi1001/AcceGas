@@ -13,3 +13,63 @@
     max-width: 100%;
     max-height: 100%1;
 }
+.log_cont img{
+    height: 100%;
+    text-align: center;
+    width: 5rem;
+}
+.small-icon {
+    background-image: url('../img/Logonv.svg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-clip: padding-box;
+    background-position: center;
+    width: 7rem;
+    height: .3rem;
+    padding: 5rem 0 0 0;
+    text-align: center;
+    margin: 0;
+    line-height: 0rem;    
+}
+.big-icon {
+    background-image: url('../img/Logonv.svg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-clip: padding-box;
+    background-position: center;
+    padding: 5rem 0 0 0;
+    text-align: center;
+    margin: 0;
+}
+/* after-before elements */
+.aftr_down_arrow::after{
+    content: '⮟';
+    font-size: 1.2rem;
+    font-weight: 50;
+    position: relative;
+    top: .05rem;
+    left: .2rem;
+}
+.aftr_down_arrow:hover::after{
+    content: '⮝';
+    font-size: 1.2rem;
+    font-weight: 50;
+    position: relative;
+    top: .05rem;
+    left: .2rem;
+}
+.whatsapp::before{
+    content: url(../img/homepage/simbols/whatsapp.svg);
+}
+.instagram::before{
+    content: url(../img/homepage/simbols/instagram.svg);
+}
+.facebook::before{
+    content: url(../img/homepage/simbols/facebook.svg);
+}
+.youtube::before{
+    content: url(../img/homepage/simbols/youtube.svg);
+}
+.tiktok::before{
+    content: url(../img/homepage/simbols/tiktok.svg);
+}

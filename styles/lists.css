@@ -1,0 +1,22 @@
+/* Header */
+.ul-hrzt-full{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    color: #000;
+    margin: 0;
+}
+
+.foot-ul{
+    list-style: none;
+}
+.ul_hrzt_half{
+    height: inherit;
+    width: 30rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

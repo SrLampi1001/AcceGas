@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra todas nuestras opciones en accesorios para gas. Todo lo relacionado a gas a precios justos."/>
+    <meta name="keywords" content="calentador, accegas, itagui, accesorio gas, accesorios, pealpe, polipropileno, galvanizado, tee, codo, cobre"/>
+    <meta name="author" content="accegas"/>
+    <meta name="copyright" content="accegas"/>
+    <link rel="icon" href="/img/nvlog.ico"/>
+    <title>Productos Accegas</title>
+</head>
+<body>
+    <div class="body">
+        <header class="front_page">
+            <h1 class="h1_main big-icon">Catálogo Accegas</h1>
+        
+        </header>
+        <div class="catalogue" id="catalogo"></div>
+    </div>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/vars.css">
+    <link rel="stylesheet" href="/styles/utils.css">    
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="/styles/catalogue.css">
+    <script>
+        async function cargarProductos() {
+            try {
+                const response = await fetch('http://127.0.0.1:5000/api/productos');
+                const productos = await response.json();
+
+                const catalogo = document.getElementById("catalogo");
+                catalogo.innerHTML = ""; // Limpiar contenido anterior
+
+                productos.forEach(producto => {
+                    const div = document.createElement("div");
+                    div.classList.add("producto");
+
+                    div.innerHTML = `
+                        <h3>${producto.Name}</h3>
+                        ${producto.img1 ? `<img src="${producto.img1}" alt="${producto.Name}">` : ""}
+                        ${producto.img3 ? `<img src="${producto.img2}" alt="${producto.Name}">` : ""}
+                        ${producto.img3 ? `<img src="${producto.img3}" alt="${producto.Name}">` : ""}
+                        <p>Cantidad: ${producto.Amount}</p>
+                    `;
+
+                    catalogo.appendChild(div);
+                });
+            } catch (error) {
+                console.error("Error cargando productos:", error);
+            }
+        }
+
+        cargarProductos();
+    </script>
+</body>
+</html>

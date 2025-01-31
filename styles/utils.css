@@ -13,4 +13,39 @@
     border-radius: 1rem;
     
 }
-
+.nav_main {
+    width: 75%;
+    border-radius: 1rem;
+    background-color: var(--blue-main);
+    display: flex;
+    align-content: center;
+    padding: 0 3rem 0 2rem;
+    box-sizing: border-box;
+    height: 6rem;
+}
+.nav_smll{
+    width: 90%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: self-start;
+}
+.left_pst{
+    position: relative;
+    left: 0;
+    margin: 0 0 0 3rem;
+}
+.right_pst{
+    position: relative;
+    right: 0;
+    margin: 0 3rem 0 0;
+}
+#buscador{
+    border-radius: .5rem;
+    border-style:groove;
+    border: .15rem solid var(--gray-no-so-dark);
+}
+.hidden{
+    display: none;
+}

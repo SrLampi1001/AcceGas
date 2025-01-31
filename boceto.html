@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcceGas - Servicios Técnicos</title>
+    <style>
+        :root {
+            --blue-main: #2a4d7a; /* Azul opaco principal */
+            --blue-purplish: #99a0c5; 
+            --yellow-bright: #ffc107; /* Amarillo vibrante moderado */
+            --red-bright: #e53935; /* Rojo vibrante moderado */
+            --orange-accent: #ff8c00; /* Naranja para detalles */
+            --white-bg: #ffffff; /* Fondo blanco */
+            --gray-light: #f5f5f5; /* Fondo claro para secciones */
+            --text-dark: #333333; /* Texto principal */
+            
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--gray-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--blue-main);
+            color: var(--white-bg);
+            padding: 1rem 2rem;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            margin: 1rem auto;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--white-bg);
+            background-color: var(--red-bright);
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--orange-accent);
+        }
+
+        .main-content {
+            padding: 2rem;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .service {
+            background-color: var(--white-bg);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+        }
+
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service h3 {
+            background-color: var(--yellow-bright);
+            color: var(--blue-main);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .service p {
+            padding: 1rem;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: var(--blue-main);
+            color: var(--white-bg);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            border-radius: 15px 15px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a AcceGas</h1>
+        <p>Soluciones técnicas en gasodomésticos y redes de gas</p>
+    </header>
+
+    <nav>
+        <a href="#services">Servicios</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="main-content" id="services">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Servicio 1">
+                <h3>Reparación de Gasodomésticos</h3>
+                <p>Ofrecemos mantenimiento y reparación de estufas, hornos y calentadores de gas.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Servicio 2">
+                <h3>Instalación de Redes de Gas</h3>
+                <p>Diseño e instalación segura de redes de gas para hogares y empresas.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Servicio 3">
+                <h3>Asesoría Técnica</h3>
+                <p>Contamos con expertos para asesorarte en proyectos relacionados con gas.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AcceGas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

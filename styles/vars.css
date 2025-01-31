@@ -1,3 +1,21 @@
+:root{
+    --blue-main: #2a4d7a; 
+    --blue-main-tras: #2a4d7aee; 
+    --blue-purplish:#99a0c5;
+    --blue-purplish-tras:#99a0c5ee;
+    --yellow-bright: #ffc107;
+    --red-bright: #e53935;
+    --orange-accent: #ff8c00;
+    --gray-light: #cccaca;
+    --gray-light-tras: #cccaca99;
+    --gray-dark: #333333;
+    --gray-no-so-dark: #555;
+    --green-wts: #097539;
+}
+body{
+    font-family: 'arimo', Verdana, Geneva, Tahoma, sans-serif;  
+}
+
 @font-face {
     font-family: 'arimo';
     src: 
