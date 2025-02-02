@@ -27,9 +27,13 @@
     cursor: pointer;
     transition: .2s;
 }
+#calentadores .product{
+    width: 18rem;
+    height: 22rem;
+}
 .product img {
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     object-fit: cover;
     border-radius: 1rem;
 }
