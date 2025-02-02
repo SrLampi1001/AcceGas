@@ -21,7 +21,6 @@ except mysql.connector.Error as err:
 # Directorio donde están los productos
 productos_dir = "F:/AcceGas/pag/AcceGas/catalogues/img_products";
 
-
 # Recorrer las carpetas de productos
 for folder in os.listdir(productos_dir):
     product_path = os.path.join(productos_dir, folder)
@@ -31,18 +30,20 @@ for folder in os.listdir(productos_dir):
         imagenes = [f"https://accegas.com.co/catalogues/img_products/{folder}/{file}" for file in os.listdir(product_path) if file.endswith(('.jpg', '.jpeg'))]
         while len(imagenes) < 3:
             imagenes.append(None)
-        
-        # Insertar el producto en la base de datos
-        sql = "INSERT INTO products (name, img1, img2, img3) VALUES (%s, %s, %s, %s)"
-        values = (folder, str(imagenes[0]), str(imagenes[1]), str(imagenes[2]))  # Convertimos la lista de imágenes en texto
-
-        try:
-            cursor.execute(sql, values)
-            connection.commit()
-            print(f"Producto '{folder}' subido con éxito.")
-        except mysql.connector.Error as err:
-            print(f"Error al insertar '{folder}': {err}")
-
+        cursor.execute("SELECT * FROM products WHERE Name LIKE '{}%'".format(folder))
+        product = cursor.fetchall()
+        if product == []:            
+            #Insertar el producto en la base de datos
+            sql = "INSERT INTO products (name, img1, img2, img3) VALUES (%s, %s, %s, %s)"
+            values = (folder, str(imagenes[0]), str(imagenes[1]), str(imagenes[2]))  # Convertimos la lista de imágenes en texto
+            try:
+                cursor.execute(sql, values)
+                connection.commit()
+                print(f"Producto '{folder}' subido con éxito.")
+            except mysql.connector.Error as err:
+                print(f"Error al insertar '{folder}': {err}")
+        else:
+            print("Producto '{}' encontrado".format(folder))
 # Cerrar la conexión
 cursor.close()
 connection.close()

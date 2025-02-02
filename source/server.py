@@ -1,8 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import mysql.connector
 
 app = Flask(__name__)
-
+CORS(app)
 # Configuración de MySQL
 db_config = {
     "host": 'srv1711.hstgr.io',
@@ -19,7 +20,7 @@ def obtener_productos():
         cursor = connection.cursor(dictionary=True)
         
         # Obtener productos de la base de datos
-        cursor.execute("SELECT Name, Amount, img1, img2, img3 FROM products")
+        cursor.execute("SELECT Name, Price, img1, img2, img3, ID_producto FROM products")
         productos = cursor.fetchall()
 
         cursor.close()

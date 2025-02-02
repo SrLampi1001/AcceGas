@@ -12,46 +12,52 @@
 </head>
 <body>
     <div class="body">
+        <div class="catalogue" id="catalogue">
         <header class="front_page">
             <h1 class="h1_main big-icon">Catálogo Accegas</h1>
-        
         </header>
-        <div class="catalogue" id="catalogo"></div>
+        <section id="calentadores" class="section_catalogue">
+            <h2 class="h2_catalogue_part">Calentadores</h2>
+        </section>
+        <section id="articles" class="section_catalogue">
+            <article id="acc-cobre" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - Cobre</h2>
+            </article>
+            <article id="acc-pealpe" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - Pealpe</h2>
+            </article>
+            <article id="acc-pvc" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - PVC</h2>
+            </article>
+            <article id="acc-galvanizado" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - Galvanizado</h2>
+            </article>
+            <article id="acc-polietileno" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - Polietileno</h2>
+            </article>
+            <article id="acc-polipropileno" class="article_catalgue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - Polipropileno</h2>
+            </article>
+            <article id="acc-cpvc" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - CPVC</h2>
+            </article>
+            <article id="acc-universal" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - Universal</h2>
+            </article>
+            <article id="acc-atg" class="article_catalogue">
+                <h2 class="h2_catalogue_part">Accesorios para gas - ATG</h2>
+            </article>
+        </section>
+        <section id="otros" class="section_catalgue">
+            <h2 class="h2_catalogue_part">Otros</h2>
+        </section>
+        </div>
     </div>
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/vars.css">
     <link rel="stylesheet" href="/styles/utils.css">    
     <link rel="stylesheet" href="/styles/media.css">
     <link rel="stylesheet" href="/styles/catalogue.css">
-    <script>
-        async function cargarProductos() {
-            try {
-                const response = await fetch('http://127.0.0.1:5000/api/productos');
-                const productos = await response.json();
-
-                const catalogo = document.getElementById("catalogo");
-                catalogo.innerHTML = ""; // Limpiar contenido anterior
-
-                productos.forEach(producto => {
-                    const div = document.createElement("div");
-                    div.classList.add("producto");
-
-                    div.innerHTML = `
-                        <h3>${producto.Name}</h3>
-                        ${producto.img1 ? `<img src="${producto.img1}" alt="${producto.Name}">` : ""}
-                        ${producto.img3 ? `<img src="${producto.img2}" alt="${producto.Name}">` : ""}
-                        ${producto.img3 ? `<img src="${producto.img3}" alt="${producto.Name}">` : ""}
-                        <p>Cantidad: ${producto.Amount}</p>
-                    `;
-
-                    catalogo.appendChild(div);
-                });
-            } catch (error) {
-                console.error("Error cargando productos:", error);
-            }
-        }
-
-        cargarProductos();
-    </script>
+    <script src="/source/loadProducts.js"></script>
 </body>
 </html>

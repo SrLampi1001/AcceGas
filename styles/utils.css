@@ -41,7 +41,7 @@
     right: 0;
     margin: 0 3rem 0 0;
 }
-#buscador{
+#search_bar{
     border-radius: .5rem;
     border-style:groove;
     border: .15rem solid var(--gray-no-so-dark);
