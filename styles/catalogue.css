@@ -49,5 +49,6 @@
     cursor: pointer;
 }
 .h3_product_title{
-
+    font: 900;
+    font-family: 'Courier New', Courier, monospace;
 }
