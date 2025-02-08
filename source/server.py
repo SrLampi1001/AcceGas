@@ -1,17 +1,16 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 import mysql.connector
-import os
+
 app = Flask(__name__)
 CORS(app)
 # Configuración de MySQL
-db = mysql.connector.connect(
-    host = os.getenv("mysql.railway.internal"), 
-    user = os.getenv("root"),
-    password = os.getenv("ZQJtheOlDkhZqUCZeJVhfKzPrPSEzkXx"),
-    database = os.getenv("railway"),
-    port = os.getenv("3306")
-)
+db_config = {
+    "host": 'srv1711.hstgr.io',
+    "user": 'u976721805_admin',
+    "password": '1036616747Js',
+    "database": 'u976721805_products'
+}
 
 # Ruta para obtener los productos
 @app.route('/api/productos', methods=['GET'])
