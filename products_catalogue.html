@@ -62,7 +62,7 @@
     <script>
         async function cargarProductos() {
             try {
-                const response = await fetch("https://accegas.com.co/get_products.php");
+                const response = await fetch("https://accegas.com.co/upload_products.php");
                 const productos = await response.json();
         
                 console.log(productos); // Verifica los datos en la consola
