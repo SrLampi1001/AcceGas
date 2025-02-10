@@ -58,11 +58,11 @@
     <link rel="stylesheet" href="/styles/utils.css">    
     <link rel="stylesheet" href="/styles/media.css">
     <link rel="stylesheet" href="/styles/catalogue.css">
-    <script src="/source/loadProducts.js"></script>
+    <!-- <script src="/source/loadProducts.js"></script> -->
     <script>
         async function cargarProductos() {
             try {
-                const response = await fetch("https://accegas.com.co/source/upload_products.php");
+                const response = await fetch("http://accegas.com.co/source/upload_products.php");
                 const productos = await response.json();
         
                 console.log(productos); // Verifica los datos en la consola
@@ -74,11 +74,11 @@
                     div.classList.add("producto");
         
                     div.innerHTML = `
-                        <h3>${producto.nombre}</h3>
-                        <img src="${producto.imagen1}" alt="${producto.nombre}">
-                        <img src="${producto.imagen2}" alt="${producto.nombre}">
-                        <img src="${producto.imagen3}" alt="${producto.nombre}">
-                        <p>Cantidad disponible: ${producto.cantidad}</p>
+                        <h3>${producto.Name}</h3>
+                        <img src="${producto.img1}" alt="${producto.Name}">
+                        <img src="${producto.img2}" alt="${producto.Name}">
+                        <img src="${producto.img3}" alt="${producto.Name}">
+                        <p>Cantidad disponible: ${producto.Amount}</p>
                     `;
         
                     contenedor.appendChild(div);

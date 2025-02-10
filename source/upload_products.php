@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 // Opcional: establecer el conjunto de caracteres a UTF-8
 $conn->set_charset("utf8");
 
-$sql = "SELECT * FROM productos";
+$sql = "SELECT * FROM products";
 $result = $conn->query($sql);
 
 $productos = [];
