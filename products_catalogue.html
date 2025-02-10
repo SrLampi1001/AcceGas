@@ -53,11 +53,11 @@
         </section>
         </div>
     </div>
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/vars.css">
-    <link rel="stylesheet" href="/styles/utils.css">    
-    <link rel="stylesheet" href="/styles/media.css">
-    <link rel="stylesheet" href="/styles/catalogue.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/utils.css">    
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/catalogue.css">
     <!-- <script src="/source/loadProducts.js"></script> -->
     <script>
         async function cargarProductos() {
@@ -67,11 +67,11 @@
         
                 console.log(productos); // Verifica los datos en la consola
         
-                const contenedor = document.getElementById("catalogo");
+                const contenedor = document.getElementById("catalogue");
         
                 productos.forEach(producto => {
                     let div = document.createElement("div");
-                    div.classList.add("producto");
+                    div.classList.add("product");
         
                     div.innerHTML = `
                         <h3>${producto.Name}</h3>
